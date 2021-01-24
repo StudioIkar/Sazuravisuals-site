@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+{% block body_class %}homepage{% endblock %}
+
+{% block body %}
+
+
+   <section id="home-screen" data-scroll="0" class="current">
+
+      <img src="{{ asset('img/logo.gif') }}" class="home-anim" alt="sazura_logo">
+
+      <img src="{{ asset('img/sazura_logo_noir.png') }}" id="home-img" alt="sazura_logo_noir">
+
+      <div id="home-desc">
+         <span>GRAPHISTE</span>
+         <span>PHOTOGRAPHE</span>
+         <span>DIRECTEUR ARTISTIQUE</span>
+      </div>
+
+
+   </section>
+
+   <section class="home-scroll" data-scroll="1">
+      <a href="{{ path('offi') }}" class="home-link" id="home-poch-offi">
+         <h1>POCHETTES OFFICIELLES</h1>
+         <span> Sopico / Zamdane / Beeby / ...</span>
+      </a>
+      <h1 class="bottom-title">POCHETTES ALTERNATIVES</h1>
+
+   </section>
+   <section class="home-scroll" data-scroll="2">
+
+         <h1 class="top-title">POCHETTES OFFICIELLES</h1>
+      <a href="{{ path('alter') }}" class="home-link" id="home-poch-alter">
+         <h1>POCHETTES ALTERNATIVES</h1>
+
+         <span> The Weeknd / Gazo / Rihanna / …</span>
+      </a>
+      <h1 class="bottom-title">ENTER IN MY VISION</h1>
+   </section>
+
+   <section class="home-scroll" data-scroll="3">
+      <h1 class="top-title">POCHETTES ALTERNATIVES</h1>
+      <a href="{{ path('vision') }}" class="home-link" id="home-vision">
+         <h1>ENTER IN MY VISION</h1>
+         <span> Le jardin d’Eden / La danse des âmes / …</span>
+      </a>
+      <h1 class="bottom-title">AFFICHES & POSTERS</h1>
+   </section>
+
+   <section class="home-scroll"  data-scroll="4">
+      <h1 class="top-title">ENTER IN MY VISION</h1>
+      <a href="{{ path('affiche') }}" class="home-link" id="home-affiche">
+         <h1>AFFICHES & POSTERS</h1>
+         <span> Nike Air Max 720 / Travis Scott Netflix / …</span>
+      </a>
+      <h1 class="bottom-title">LOGOS</h1>
+   </section>
+
+   <section class="home-scroll"  data-scroll="5">
+      <h1 class="top-title">AFFICHES & POSTERS</h1>
+      <a href="{{ path('logo') }}" class="home-link" id="home-logo">
+         <h1>LOGOS</h1>
+         <span> Yarami / Vosgelis Center / …</span>
+      </a>
+      <h1 class="bottom-title">FONDS D'ÉCRAN</h1>
+   </section>
+
+   <section class="home-scroll"  data-scroll="6" data-parallax="scroll">
+      <h1 class="top-title">AFFICHES & POSTERS</h1>
+      <a href="{{ path('wallpaper') }}" class="home-link" id="home-wallpaper">
+         <h1>FONDS D'ÉCRAN</h1>
+         <span> Hotline / Ëpisode 0 / …</span>
+      </a>
+   
+   </section>
+
+   <section class="home-scroll"  data-scroll="7">
+      <a href="{{ path('concert_13block') }}" class="home-link" id="home-13block">
+         <h1>CONCERT 13 BLOCK</h1>
+         <span> Sidikey / Stavo / Zed / Zefor</span>
+      </a>
+      <h1 class="bottom-title">CONCERT ZAMDANE</h1>
+   </section>
+
+   <section class="home-scroll" data-scroll="8">
+      <h1 class="top-title">CONCERT 13 BLOCK</h1>
+      <a href="{{ path('concert_zamdane') }}" class="home-link" id="home-zamdane">
+         <h1>CONCERT ZAMDANE</h1>
+         <span> Zamdane / Avepurplelord </span>
+      </a>
+      <h1 class="bottom-title">CONCERT PALACE PARTY</h1>
+   </section>
+
+   <section class="home-scroll" data-scroll="9">
+      <h1 class="top-title">CONCERT ZAMDANE</h1>
+      <a href="{{ path('concert_palace') }}" class="home-link" id="home-palace">
+         <h1>CONCERT PALACE PARTY</h1>
+         <span> A2H / Emma Vender / Josué / Ori </span>
+      </a>
+   </section>
+
+   <section class="home-boutique" data-scroll="10">
+      <div class="left-boutique">
+         <div class="btn-boutique"><a href="">Découvrir</a></div>
+         <img src="{{ asset('img/sazura_home_merch.png') }}" alt="sazura_home_merch">
+      </div>
+      <div class="right-boutique">
+         <img src="{{ asset('img/sazura_home_tee.jpg') }}" alt="sazura_home_tee">
+      </div>
+
+   </section>
+
+   <section class="home-contact" data-scroll="11">
+      <h1 class="contact-title">ÉCHANGEONS ENSEMBLE</h1>
+      <div class="contact-text">
+         <p>POUR LES DEMANDES GÉNÉRALES</p> 
+         <span>OU</span> 
+         </p>COLLABORER AVEC MOI</p>
+      </div>
+      <p class="contact-email">sazuradesign@gmail.com</p>
+      <div class="contact-footer">
+            <p class="title">SITE WEB :</p>
+            <p class="mail">antoinecldn@gmail.com</p>
+      </div>
+   </section>
+
+
+{% endblock %}

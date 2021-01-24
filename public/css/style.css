@@ -1,0 +1,548 @@
+/* GENERAL */
+
+
+@font-face {
+    font-family: "Porpora";
+    src: url("../fonts/Porpora-Regular.woff2") format("woff2"),
+    url("../fonts/Porpora-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Noah";
+    src: url("../fonts/Noah-Regular.eot") format("eot"),
+    url("../fonts/Noah-Regular.woff") format("woff"),
+    url("../fonts/Noah-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Noah Italic";
+    src: url("../fonts/Noah-RegularItalic.eot") format("eot"),
+    url("../fonts/Noah-RegularItalic.woff") format("woff"),
+    url("../fonts/Noah-RegularItalic.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Noah Bold";
+    src: url("../fonts/Noah-Bold.eot") format("eot"),
+    url("../fonts/Noah-Bold.woff") format("woff"),
+    url("../fonts/Noah-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Noah Bold Italic";
+    src: url("../fonts/Noah-BoldItalic.eot") format("eot"),
+    url("../fonts/Noah-BoldItalic.woff") format("woff"),
+    url("../fonts/Noah-BoldItalic.woff2") format("woff2");
+}
+
+body {
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+
+}
+body,html{
+
+    height:100%;
+    margin: 0;
+
+}
+
+.homepage {
+    overflow: hidden;
+}
+.page {
+    overflow-x: hidden;
+}
+
+footer,header {
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+ul {
+    padding: 0;
+}
+
+a:hover {
+    color:#1E90FF !important;
+}
+
+
+
+/* HEADER */
+header {
+    height: 10vh;
+    z-index: 500;
+}
+#menu-web {
+    padding: 20px 20px 0 20px;
+    text-transform: uppercase;
+    font-family: "Porpora";
+    font-size: 16px;
+    display: flex;
+  /*  padding: 20px 20px 0 20px; */
+ }
+
+
+#menu-web ul li {
+    margin-bottom: 5px;
+}
+
+#menu-web a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+#menu-web img {
+    width: 100px;
+
+}
+
+#menu-left  {
+    flex: 1 1 auto;
+
+}
+
+#menu-right {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#menu-right li:first-child {
+    flex-grow: 1;
+}
+
+.progress-bar {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 0%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #1E90FF;
+    transition:1s;
+}
+
+/* FOOTER */
+
+footer {
+    height: 10vh;
+}
+
+#footer-links {
+    padding: 0 20px 20px 20px;
+    height: 100%;
+    font-family: "Porpora";
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+}
+
+
+#footer-links a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+#footer-links li:nth-child(2){
+    flex-grow: 2;
+}
+#footer-links li {
+    align-self: flex-end;
+    margin-right: 7px;
+}
+.opacity {
+    opacity: 0.5;
+}
+
+.footer-page{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: 'Porpora';
+    font-size: 15px;
+    margin: 0;
+    opacity: .5;
+}
+/* HOME */
+
+#home-img {
+    width: 1000px;
+}
+
+#home-screen {
+    height: 80vh;
+    font-family: "Noah";
+    font-size: 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 400px;
+    padding-right: 200px;
+}
+
+
+#home-desc {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 50px;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.home-anim{
+    height: auto;
+    position: absolute;
+    width: auto;
+    z-index: -1;
+    margin-right: 10%;
+}
+#stars {
+    z-index: -99;
+    position: absolute;
+}
+#home-desc span {
+    height: 28px;
+}
+/* HOME CONTENU */
+
+.home-scroll {
+    background-repeat: no-repeat;
+}
+
+.home-link{
+    width: 1400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    color: white;
+}
+
+.home-link:hover {
+    color: white !important;
+}
+#home-poch-offi {
+    background: url("../img/sazura_home_pochette_officielle.png")  no-repeat;
+    background-size: 100%;
+    background-position: center center;
+
+}
+#home-poch-alter {
+    background: url("../img/sazura_home_pochette_alternative.png") no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+#home-vision {
+    background-image: url("../img/sazura_home_vision.jpg");
+    background-size: 100%;
+    background-position: center center;
+}
+
+#home-affiche {
+    background-image: url("../img/sazura_home_affiche.png");
+    background-size: 100%;
+    background-position: center center;
+}
+
+#home-logo {
+    background-image: url("../img/sazura_home_logo.png");
+    background-size: 100%;
+    background-position: center center;
+}
+
+#home-wallpaper {
+    background-image: url("../img/sazura_home_wallpaper.png");
+    background-size: 100%;
+    background-position: center center;
+}
+
+#home-13block {
+    background-image: url("../img/sazura_home_concert_13block.png");
+    background-size: 100%;
+    background-position: center center;
+}
+
+#home-zamdane {
+    background-image: url("../img/sazura_home_concert_zamdane.png");
+    background-size: 100%;
+    background-position: center center;
+}
+
+#home-palace {
+    background-image: url("../img/sazura_home_concert_palace.png");
+    background-size: 100%;
+    background-position: center center;
+}
+
+.home-scroll {
+    width: 1400px;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-scroll h1 {
+    font-family: 'Noah Bold';
+    font-size: 80px;
+    margin: 0;
+}
+
+.home-scroll span {
+    font-family: "Porpora";
+    font-size: 20px;
+    color:#1E90FF;
+    width: 1150px;
+    text-align: end;
+    margin-top: -10px;
+}
+
+.top-title{
+    position: absolute;
+    opacity: 0.3;
+    top: 13%;
+}
+
+.bottom-title{
+    position: absolute;
+    opacity: 0.3;
+    bottom: 11%;
+}
+
+/* HOME BOUTIQUE */
+
+.home-boutique  {
+    display: flex;
+    justify-content: center;
+}
+
+.home-boutique .left-boutique  {
+    flex-direction: column;
+    display: flex;
+    margin-right: 140px;
+}
+
+.home-boutique .left-boutique img {
+    width: 500px;
+    height: 500px;
+}
+
+.home-boutique img {
+    width: 600px;
+    height: 600px;
+}
+
+.home-boutique .btn-boutique {
+    margin: auto;
+    font-family: 'Noah Bold';
+    width: 350px;
+    text-align: center;
+    border-color: white;
+    font-size: 70px;
+    border: 2px solid;
+    border-radius: 0px;
+
+    padding: 0;
+}
+
+.home-boutique .btn-boutique a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.home-boutique .btn-boutique a:hover {
+    color: black !important;
+    text-decoration: none;
+}
+
+.home-contact {
+    height: 80%;
+}
+.contact-title {
+    font-family: 'Noah';
+    color:#1E90FF;
+    font-size: 100px;
+    padding-top: 8%;
+    text-align: center;
+}
+
+.contact-text {
+    font-family: 'Noah Bold';
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-email {
+    font-family: 'Noah';
+    color:#1E90FF;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 35px;
+}
+
+.contact-text p{
+    margin: 0;
+}
+.contact-footer .title {
+    font-family: 'Noah';
+    font-size: 20px;
+}
+.contact-footer {
+    text-align: center;
+    margin-top: 70px;
+}
+.contact-footer .mail {
+    font-family: 'Noah';
+    font-size: 25px;
+    color:#1E90FF;
+}
+
+
+/* AUTRES PAGES  */
+
+.col-img {
+    width: 600px;
+   /* margin-bottom: 90px;
+    margin-top: 90px;
+    margin-right: 100px;
+    margin-left: 80px; */
+}
+.page-title {
+    font-family: 'Noah Bold';
+    text-align: center;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+
+.col-logo {
+    width: 1380px;
+    height: 777px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 45px;
+}
+
+#affiche-travis {
+    height: 899px;
+}
+
+#zamdane-5 {
+    width: 1380px;
+    height: 920px;
+}
+
+.img-title {
+    position: absolute;
+    text-align: center;
+    display: none;
+    font-family: 'Noah Bold';
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.img-desc {
+    position: absolute;
+    text-align: center;
+    font-family: 'Noah Bold';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    display: none;
+
+}
+
+.img-desc h1 {
+    font-family: 'Noah Bold';
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0;
+}
+
+.img-desc p {
+    font-family: 'Noah';
+    font-size: 20px;
+    margin: 0;
+}
+
+.img-desc p.bold {
+    font-family: 'Noah Bold';
+}
+
+
+.gallery-img {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 90px;
+    margin-top: 90px;
+    margin-right: 100px;
+    margin-left: 80px;
+    
+}
+
+.modal-img {
+    width: 800px;
+}
+
+.modal-photo {
+    width: 600px;
+}
+.modal-backdrop
+{
+    opacity:0.6 !important;
+}
+  
+.modal-content {
+    border-radius: 0;
+    background-color: unset;
+    background-clip: unset; 
+    border: unset; 
+    border-radius: unset; 
+    outline: unset;
+}
+
+.modal-close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 200%;
+    cursor: pointer;
+}
+
+/* PAGE CONTACT */
+.contact-social {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-social p{
+    font-size: 20px;
+    font-family: 'Noah';
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.contact-arobase {
+    font-family: 'Noah';
+    color: #1E90FF;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}

@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="col-12 page-title">POCHETTES ALTERNATIVES</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_1.jpg') }}">
+                <div class="img-desc">
+                    <h1>Gazo ft Freeze Corleone - Drill Fr 4</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@kazeda_</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_2.jpg') }}">
+                <div class="img-desc">
+                    <h1>JUL - La machine</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@blackswordcreatives</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_3.jpg') }}">
+                <div class="img-desc">
+                    <h1>Booba - Cavaliero</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@artbt_</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_4.jpg') }}">
+                <div class="img-desc">
+                    <h1>Lil uzi vert - Eternal atake</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_5.jpg') }}">
+                <div class="img-desc">
+                    <h1>Rihanna -</h1>
+                    <h1>Alternative album cover</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_6.jpg') }}">
+                <div class="img-desc">
+                    <h1>Jackboys - What to do</h1>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_7.jpg') }}">
+                <div class="img-desc">
+                    <h1>The Weeknd - Blinding Lights</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_8.jpg') }}">
+                <div class="img-desc">
+                    <h1>A2H ft Jok’air - </h1>
+                    <h1>Jeune voyou cherche love</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_9.jpg') }}">
+                <div class="img-desc">
+                    <h1>Capitaine Roshi - Cérémonie</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@kazeda_</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_10.jpg') }}">
+                <div class="img-desc">
+                    <h1>Jaden - Erys</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_11.jpg') }}">
+                <div class="img-desc">
+                    <h1>Beeby - Genesis</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_12.jpg') }}">
+                <div class="img-desc">
+                    <h1>Pnl - Mowgli II</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_13.jpg') }}">
+                <div class="img-desc">
+                    <h1>Kekra - Wing Chun</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/alter/sazura_pochette_alternative_14.jpg') }}">
+                <div class="img-desc">
+                    <h1>Kalash Criminel - Fatality</h1>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-l" role="document">
+    <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+            <img class="modal-close" src="{{ asset('img/close.png') }} " data-dismiss="modal" aria-label="Close">
+            <img class="modal-img" src="#">
+        </div>
+
+    </div>
+</div>
+</div>
+
+{% endblock %}

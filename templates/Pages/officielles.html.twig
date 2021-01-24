@@ -1,0 +1,155 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="col-12 page-title">POCHETTES OFFICIELLES</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_1.jpg') }}">
+                <div class="img-desc">
+                    <h1>Jey - 207</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_2.jpg') }}">
+                <div class="img-desc">
+                    <h1>FSS - Lumière noire</h1>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_3.jpg') }}">
+                <div class="img-desc">
+                    <h1>Beeby - Larme de lave</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@zycarus</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_4.jpg') }}">
+                <div class="img-desc">
+                    <h1>Furlax - Infini</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_5.jpg') }}">
+                <div class="img-desc">
+                    <h1>SOPICO - ËPISODE 0</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@yannick_draw / @sempers_</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_6.jpg') }}">
+                <div class="img-desc">
+                    <h1>Beeby - Hotline</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_7.jpg') }}">
+                <div class="img-desc">
+                    <h1>LPR - Plus le même</h1>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_8.jpg') }}">
+                <div class="img-desc">
+                    <h1>Zamdane - Low</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_9.jpg') }}">
+                <div class="img-desc">
+                    <h1>Joss - Payday</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_10.jpg') }}">
+                <div class="img-desc">
+                    <h1>Thahomey - Storm Rising</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@blackswordcreatives</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_11.jpg') }}">
+                <div class="img-desc">
+                    <h1>Beeby - Hiver 2019</h1>
+
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_12.jpg') }}">
+                <div class="img-desc">
+                    <h1>Lifevfterdeath - Apoklyps</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_13.jpg') }}">
+                <div class="img-desc">
+                    <h1>Twenty - Menace 4</h1>
+                </div>
+                
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_14.jpg') }}">
+                <div class="img-desc">
+                    <h1>Veerus - Marché noir</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_15.jpg') }}">
+                <div class="img-desc">
+                    <h1>Veerus - I6</h1>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/offi/sazura_pochette_officielle_16.jpg') }}">
+                <div class="img-desc">
+                    <h1>Veerus ft freeze corleone - </h1>
+                    <h1>KKK</h1>
+                </div>
+     
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-l" role="document">
+    <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+            <img class="modal-close" src="{{ asset('img/close.png') }} " data-dismiss="modal" aria-label="Close">
+            <img class="modal-img" src="#">
+        </div>
+
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<section>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="col-12 page-title">ENTER IN MY VISION</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/vision/sazura_vision_1.jpg') }}">
+                <div class="img-desc">
+                    <h1>La malédiction ou le rituel du Lycanthrope</h1>
+                    <p>D.A et réalisation par</p>
+                    <p class="bold">sazuravisuals</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/vision/sazura_vision_2.jpg') }}">
+                <div class="img-desc">
+                    <h1>Le jardin d’Eden, les portes du paradis</h1>
+                    <p> D.A et réalisation par</p> 
+                    <p class="bold">sazuravisuals</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/vision/sazura_vision_3.jpg') }}">
+                <div class="img-desc">
+                    <h1>La danse des âmes</h1>
+                    <p>En collaboration avec</p>
+                    <p class="bold">@sprityboi</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/vision/sazura_vision_4.jpg') }}">
+                <div class="img-desc">
+                    <h1>L’éveil du Buddha</h1>
+                    <p> D.A et réalisation par</p>
+                    <p class="bold">sazuravisuals</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="gallery-img">
+                <img class="col-img" src="{{ asset('img/vision/sazura_vision_5.jpg') }}">
+                <div class="img-desc">
+                    <h1>Energie ball + Vision</h1>
+                    <p>D.A et réalisation par</p>
+                    <p class="bold">sazuravisuals</p>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <div class="col-img"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-l" role="document">
+    <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+            <img class="modal-close" src="{{ asset('img/close.png') }} " data-dismiss="modal" aria-label="Close">
+            <img class="modal-img" src="#">
+        </div>
+
+    </div>
+</div>
+</div>
+
+{% endblock %}
