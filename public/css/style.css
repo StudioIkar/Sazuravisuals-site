@@ -292,7 +292,7 @@ footer {
     flex-direction: column;
 }
 
-.home-scroll h1 {
+.home-scroll h2 {
     font-family: 'Noah Bold';
     font-size: 80px;
     margin: 0;
@@ -470,7 +470,7 @@ footer {
 
 }
 
-.img-desc h1 {
+.img-desc h2 {
     font-family: 'Noah Bold';
     text-transform: uppercase;
     font-size: 28px;
