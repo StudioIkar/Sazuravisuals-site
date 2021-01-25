@@ -19,7 +19,7 @@ $('document').ready(function(){
             // set a timer to enable again it 1 second from now
             setTimeout(function() {
                 scrollEnabled = true;
-            }, 500);
+            }, 750);
         }
 
         $('body').on('mousewheel', function(event) {
