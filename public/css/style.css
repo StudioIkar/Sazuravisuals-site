@@ -239,43 +239,43 @@ footer {
     background-position: center center;
 }
 #home-vision {
-    background-image: url("../img/sazura_home_vision.jpg");
+    background: url("../img/sazura_home_vision.jpg") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
 #home-affiche {
-    background-image: url("../img/sazura_home_affiche.png");
+    background: url("../img/sazura_home_affiche.png") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
 #home-logo {
-    background-image: url("../img/sazura_home_logo.png");
+    background: url("../img/sazura_home_logo.png") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
 #home-wallpaper {
-    background-image: url("../img/sazura_home_wallpaper.png");
+    background: url("../img/sazura_home_wallpaper.png") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
 #home-13block {
-    background-image: url("../img/sazura_home_concert_13block.png");
+    background: url("../img/sazura_home_concert_13block.png") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
 #home-zamdane {
-    background-image: url("../img/sazura_home_concert_zamdane.png");
+    background: url("../img/sazura_home_concert_zamdane.png") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
 
 #home-palace {
-    background-image: url("../img/sazura_home_concert_palace.png");
+    background: url("../img/sazura_home_concert_palace.png") no-repeat;
     background-size: 100%;
     background-position: center center;
 }
@@ -300,9 +300,9 @@ footer {
     font-family: "Porpora";
     font-size: 20px;
     color:#1E90FF;
-    /*width: 1150px;*/
+    width: 100%;
+    margin-right: 10vw;
     text-align: end;
-    margin-top: -10px;
 }
 
 .top-title{
