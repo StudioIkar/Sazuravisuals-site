@@ -11,16 +11,16 @@ $('document').ready(function(){
 
         var scrollEnabled = true;
 
-
-        function disableScroll() {
-            // temporarily disable action
-            scrollEnabled = false;
-
-            // set a timer to enable again it 1 second from now
-            setTimeout(function() {
-                scrollEnabled = true;
-            }, 1000);
-        }
+        //
+        // function disableScroll() {
+        //     // temporarily disable action
+        //     scrollEnabled = false;
+        //
+        //     // set a timer to enable again it 1 second from now
+        //     setTimeout(function() {
+        //         scrollEnabled = false;
+        //     }, 1000);
+        // }
 
         $('body').on('mousewheel', function(event) {
             $('section').not('.current').hide();
@@ -39,7 +39,7 @@ $('document').ready(function(){
                   progressBarFinal =  (progressBarH-progressVal);
                   progressBarH = progressBarFinal;
                   $('.progress-bar').height(progressBarFinal+'%');
-                  disableScroll();
+                  
               }
           //Down
             }else{
@@ -55,7 +55,7 @@ $('document').ready(function(){
                   progressBarFinal =  (progressBarH+progressVal);
                   progressBarH = progressBarFinal;
                   $('.progress-bar').height(progressBarFinal+'%');
-                  disableScroll();
+                  
                 
 
               }
@@ -112,7 +112,7 @@ $('document').ready(function(){
             $( "#menu-left li a" ).css('color','white');
             $( "#graphisme" ).css('color','#1E90FF');
             $('.footer-home').hide();
-            disableScroll();
+            
 
             break;
           case 'photographie':
@@ -126,7 +126,7 @@ $('document').ready(function(){
             $( "#menu-left li a" ).css('color','white');
             $( "#photographie" ).css('color','#1E90FF');
             $('.footer-home').hide();
-            disableScroll();
+            
             break;     
           case 'boutique':
             $('section').removeClass('current');
@@ -139,7 +139,7 @@ $('document').ready(function(){
             $( "#menu-left li a" ).css('color','white');
             $( "#boutique" ).css('color','#1E90FF');
             $('.footer-home').hide();
-            disableScroll();
+            
             break;    
 
         }
