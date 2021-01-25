@@ -124,11 +124,12 @@ header {
 /* FOOTER */
 
 footer {
-    height: 10vh;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
 }
 
 #footer-links {
-    padding: 0 20px 20px 20px;
     height: 100%;
     font-family: "Porpora";
     font-size: 16px;
@@ -139,7 +140,7 @@ footer {
 }
 
 .footer-home li{
-    margin: 0 2vh;
+    margin: 0 1vh;
 }
 #footer-links a {
     color:#FFFFFF;
