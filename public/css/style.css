@@ -134,21 +134,18 @@ footer {
     font-size: 16px;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
+.footer-home li{
+    margin: 0 2vh;
+}
 #footer-links a {
     color:#FFFFFF;
     text-decoration: none;
 }
 
-#footer-links li:nth-child(2){
-    flex-grow: 2;
-}
-#footer-links li {
-    align-self: flex-end;
-    margin-right: 7px;
-}
 .opacity {
     opacity: 0.5;
 }
