@@ -11,16 +11,16 @@ $('document').ready(function(){
 
         var scrollEnabled = true;
 
-        //
-        // function disableScroll() {
-        //     // temporarily disable action
-        //     scrollEnabled = false;
-        //
-        //     // set a timer to enable again it 1 second from now
-        //     setTimeout(function() {
-        //         scrollEnabled = false;
-        //     }, 1000);
-        // }
+
+        function disableScroll() {
+            // temporarily disable action
+            scrollEnabled = false;
+
+            // set a timer to enable again it 1 second from now
+            setTimeout(function() {
+                scrollEnabled = true;
+            }, 500);
+        }
 
         $('body').on('mousewheel', function(event) {
             $('section').not('.current').hide();
@@ -39,14 +39,14 @@ $('document').ready(function(){
                   progressBarFinal =  (progressBarH-progressVal);
                   progressBarH = progressBarFinal;
                   $('.progress-bar').height(progressBarFinal+'%');
-                  
+                  disableScroll();
               }
           //Down
             }else{
 
               if(data !== 11 && scrollEnabled){
 
-         
+
                   data = data+1;
                   $('section').removeClass('current');
                   $('section[data-scroll='+data+']').addClass('current');
@@ -55,8 +55,8 @@ $('document').ready(function(){
                   progressBarFinal =  (progressBarH+progressVal);
                   progressBarH = progressBarFinal;
                   $('.progress-bar').height(progressBarFinal+'%');
-                  
-                
+                  disableScroll();
+
 
               }
 
@@ -64,10 +64,10 @@ $('document').ready(function(){
             if( data == 0 || data == 11){
               $('footer').fadeIn();
             }else{
-     
+
               $('footer').hide();
-              
-          
+
+
             }
             switch (data) {
               case 0:
@@ -112,7 +112,7 @@ $('document').ready(function(){
             $( "#menu-left li a" ).css('color','white');
             $( "#graphisme" ).css('color','#1E90FF');
             $('.footer-home').hide();
-            
+            disableScroll();
 
             break;
           case 'photographie':
@@ -126,8 +126,8 @@ $('document').ready(function(){
             $( "#menu-left li a" ).css('color','white');
             $( "#photographie" ).css('color','#1E90FF');
             $('.footer-home').hide();
-            
-            break;     
+            disableScroll();
+            break;
           case 'boutique':
             $('section').removeClass('current');
             $('section[data-scroll=10]').addClass('current');
@@ -139,7 +139,7 @@ $('document').ready(function(){
             $( "#menu-left li a" ).css('color','white');
             $( "#boutique" ).css('color','#1E90FF');
             $('.footer-home').hide();
-            
+            disableScroll();
             break;    
 
         }
