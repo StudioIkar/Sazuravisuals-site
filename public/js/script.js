@@ -181,3 +181,8 @@ $('document').ready(function(){
       $( ".gallery-img img" ).css('visibility','visible');
     })
 });
+
+$(".burger").click(function(){
+    $(".header").toggleClass("active");
+    $(".burger").toggleClass("active");
+});

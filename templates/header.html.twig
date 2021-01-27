@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <div id="menu-web">
+
+    <div class="burger">
+
+        <span></span>
+
+    </div>
+
+
+
+    <div id="menu-web" class="header">
         <div class="progress-bar"></div>
         <ul id="menu-left">
             <li><a id="graphisme" href="#">Graphisme</a></li>
@@ -8,9 +17,10 @@
             <li><a id="boutique" href="#">Boutique</a></li>
         </ul>
         <ul id="menu-right">
-            <li><a href="{{ path('index') }}"><img src="{{ asset('img/sazura_logo_blanc.png') }}" alt="sazura_logo_blanc"></a></li>
+
             <li><a id="contact" href="{{ path('contact') }}">Contact</a></li>
         </ul>
+        <a class="toplogo" href="{{ path('index') }}"><img src="{{ asset('img/sazura_logo_blanc.png') }}" alt="sazura_logo_blanc"></a>
 
     </div>
 
