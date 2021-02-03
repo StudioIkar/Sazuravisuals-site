@@ -65,8 +65,8 @@ class DefaultController extends AbstractController
     }
 
     /**
-    * @Route("/concert-13block", name="concert_13block")
-    */
+     * @Route("/concert-13block", name="concert_13block")
+     */
     public function concert_13blockAction(): Response
     {
         return $this->render('Pages/concert_13block.html.twig');
@@ -88,12 +88,20 @@ class DefaultController extends AbstractController
         return $this->render('Pages/concert_palace.html.twig');
     }
 
-        /**
+    /**
      * @Route("/contact", name="contact")
      */
     public function contactAction(): Response
     {
         return $this->render('Pages/contact.html.twig');
+    }
+
+    /**
+     * @Route("/shop", name="shop")
+     */
+    public function shop(): Response
+    {
+        return $this->render('Pages/shop.html.twig');
     }
 
 }

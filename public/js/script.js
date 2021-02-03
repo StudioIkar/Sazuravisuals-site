@@ -154,7 +154,7 @@ $('document').ready(function(){
 
     //HOVER SUR LES IMG
     $('.gallery-img').hover(function() {
-      $(this).find('img').css('opacity', '0.3');
+      $(this).find('img').css('opacity', '0.5');
       $(this).find('.img-title').fadeIn(300);
       $(this).find('.img-desc').fadeIn(300);
     }, function() {

@@ -184,7 +184,12 @@ footer {
 /* HOME */
 
 #home-img {
-    width: 1000px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0.7;
 }
 
 #home-screen {
@@ -213,11 +218,11 @@ footer {
 .home-anim{
     height: auto;
     position: absolute;
-    width: auto;
+    width: 900px;
     z-index: -1;
     margin-right: 10%;
 }
-#stars {
+#stars {.home-scroll span
     z-index: -99;
     position: absolute;
 }
@@ -316,10 +321,10 @@ footer {
 .home-scroll span {
     font-family: "Porpora";
     font-size: 20px;
-    color:#1E90FF;
+    color:white;
     width: 100%;
-    margin-right: 10vw;
-    text-align: end;
+    text-align: center;
+    text-shadow: 0 0px 6px black;
 }
 
 .top-title{
@@ -339,8 +344,15 @@ footer {
 .home-boutique  {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 .home-boutique .left-boutique  {
     flex-direction: column;
     display: flex;
@@ -404,11 +416,12 @@ footer {
     color:#1E90FF;
     text-align: center;
     font-size: 50px;
-    margin-top: 35px;
+    margin: 2rem;
+    display: block;
 }
 
-.contact-text p{
-    margin: 0;
+.contact-text a{
+    margin: 1rem;
 }
 .contact-footer .title {
     font-family: 'Noah';
@@ -434,6 +447,12 @@ footer {
     margin-right: 100px;
     margin-left: 80px; */
 }
+
+
+.customcontainer{
+    max-width: 1540px;
+}
+
 .page-title {
     font-family: 'Noah Bold';
     text-align: center;
@@ -506,11 +525,14 @@ footer {
 .gallery-img {
     cursor: pointer;
     position: relative;
-    margin-bottom: 90px;
-    margin-top: 90px;
-    margin-right: 100px;
-    margin-left: 80px;
-    
+    /*margin-bottom: 90px;*/
+    /*margin-top: 90px;*/
+    /*margin-right: 100px;*/
+    /*margin-left: 80px;*/
+
+}
+.picspage .row.justify-content-between{
+    margin: 10vh 0;
 }
 
 .modal-img {
@@ -546,6 +568,11 @@ footer {
 .contact-social {
     display: flex;
     justify-content: center;
+
+}
+.contact-social a {
+    margin: 1rem;
+    color: white;
 }
 
 .contact-social p{
@@ -560,6 +587,39 @@ footer {
     text-align: center;
     font-size: 50px;
     margin-top: 10px;
+    display: block;
+}
+/* SHOP CONTACT */
+
+.shop{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop .btn-boutique {
+    font-family: 'Noah Bold';
+    text-align: center;
+    border-color: white;
+    font-size: 50px;
+    border: 2px solid;
+    border-radius: 0px;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+.shop .btn-boutique a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.shop .btn-boutique a:hover {
+    color: white !important;
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 /* Stars background css*/
@@ -657,6 +717,21 @@ footer {
     .burger{
         display: block;
     }
+    #home-screen{
+        height: 100vh;
+    }
+    header {
+        height: auto;
+    }
+    header #menu-web{
+        padding: 0;
+    }
+    .home-contact {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .container {
         width: 100%;
         padding: 0;
@@ -672,9 +747,6 @@ footer {
     }
     #home-desc{
         display: none;
-    }
-    #home-img{
-        width: 400px;
     }
     .home-scroll h2 {
         font-size: x-large;
