@@ -134,6 +134,7 @@ header {
 /* FOOTER */
 
 footer {
+    position: absolute;
     height: 6vh;
     bottom: 0;
 }
@@ -740,6 +741,26 @@ a:hover{
 /* Responsive */
 
 @media (max-width: 768px) {
+    .picspage{
+       padding-top: 10vh;
+    }
+    .footer-text{
+        text-align: center;
+    }
+    .img-desc h2{
+        font-size: 2rem;
+    }
+    .gallery-img{
+        width: 100%;
+        margin: 2vh 0;
+    }
+    .page footer{
+        bottom: unset;
+    }
+    .page-title{
+        margin: 0;
+        font-size: 3rem;
+    }
     .progress-bar{
         display: none;
     }
@@ -761,10 +782,36 @@ a:hover{
         justify-content: center;
         flex-direction: column;
     }
+    .contactapge{
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .container {
         width: 100%;
         padding: 0;
         max-width: 100%;
+    }
+    .home-boutique{
+        height: 100vh;
+    }
+
+    .contact-title{
+        font-size: 3.5rem;
+    }
+    .contact-email{
+        margin: 0;
+        font-size: 2rem;
+    }
+    .contact-arobase {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .home-boutique img{
+        width: 400px;
+        height: auto;
     }
     .home-anim{
         margin: 0;
