@@ -557,7 +557,7 @@ a:hover{
     /*margin-left: 80px;*/
 
 }
-.picspage .row.justify-content-between{
+.picspage .row.justify-content-around{
     margin: 10vh 0;
 }
 
