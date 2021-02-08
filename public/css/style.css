@@ -217,10 +217,13 @@ footer {
 
 .home-anim{
     height: auto;
-    position: absolute;
     width: 900px;
     z-index: -1;
-    margin-right: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
 }
 #stars {.home-scroll span
     z-index: -99;
@@ -345,7 +348,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 a{
     text-decoration: none;
@@ -441,7 +444,7 @@ a:hover{
 /* AUTRES PAGES  */
 
 .col-img {
-    width: 600px;
+    width: 100%;
    /* margin-bottom: 90px;
     margin-top: 90px;
     margin-right: 100px;
@@ -449,9 +452,9 @@ a:hover{
 }
 
 
-.customcontainer{
-    max-width: 1540px;
-}
+/*.customcontainer{*/
+/*    max-width: 1340px;*/
+/*}*/
 
 .page-title {
     font-family: 'Noah Bold';
@@ -525,6 +528,7 @@ a:hover{
 .gallery-img {
     cursor: pointer;
     position: relative;
+    width: 40%;
     /*margin-bottom: 90px;*/
     /*margin-top: 90px;*/
     /*margin-right: 100px;*/
