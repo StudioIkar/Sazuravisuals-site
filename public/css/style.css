@@ -404,7 +404,6 @@ a:hover{
     font-size: 70px;
     border: 2px solid;
     border-radius: 0px;
-
     padding: 0;
 }
 
@@ -412,7 +411,6 @@ a:hover{
     color: white;
     text-decoration: none;
 }
-
 
 .home-boutique .btn-boutique a:hover {
     color: black !important;
@@ -422,6 +420,12 @@ a:hover{
 .home-contact {
     height: 80%;
 }
+
+.text-footer {
+    margin-top: 70px;
+    text-align: center;
+}
+
 .contact-title {
     font-family: 'Noah';
     color:#1E90FF;
@@ -504,6 +508,7 @@ a:hover{
 #zamdane-5 {
     width: 1380px;
     height: 920px;
+    margin-left: -80%;
 }
 
 .img-title {
@@ -551,11 +556,11 @@ a:hover{
 .gallery-img {
     cursor: pointer;
     position: relative;
-    width: 40%;
-    /*margin-bottom: 90px;*/
-    /*margin-top: 90px;*/
-    /*margin-right: 100px;*/
-    /*margin-left: 80px;*/
+    width: 30%;
+    margin-bottom: 90px;
+    margin-top: 90px;
+    margin-right: 100px;
+    margin-left: 80px;
 
 }
 .picspage .row.justify-content-around{
@@ -610,7 +615,7 @@ a:hover{
 }
 .contact-arobase {
     font-family: 'Noah';
-    color: #1E90FF;
+    color: white;
     text-align: center;
     font-size: 50px;
     margin-top: 10px;
