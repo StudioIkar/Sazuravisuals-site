@@ -526,8 +526,8 @@ a:hover{
     position: absolute;
     text-align: center;
     font-family: 'Noah Bold';
-    /*top: 50%;
-    left: 50%;*/
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
     display: none;
