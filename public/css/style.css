@@ -412,8 +412,17 @@ a:hover{
 }
 
 .home-boutique .btn-boutique a:hover {
-    color: black !important;
-    text-decoration: none;
+    color: white !important;
+}
+
+.home-boutique .btn-boutique {
+    background: blue;
+    background: linear-gradient(to left, black 50%, #1E90FF 50%) right;
+    background-size: 200%;
+    transition: .2s ease-out;
+}
+.home-boutique .btn-boutique:hover {
+    background-position: left;
 }
 
 .home-contact {
