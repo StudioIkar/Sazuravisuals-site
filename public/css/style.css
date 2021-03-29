@@ -439,7 +439,10 @@ a:hover{
     margin-top: 70px;
     text-align: center;
 }
-
+.home-contact .text-footer {
+    margin-top: 62px;
+    text-align: center;
+}
 .contact-title {
     font-family: 'Noah';
     color:#1E90FF;
@@ -473,7 +476,7 @@ a:hover{
 }
 .contact-footer {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 .contact-footer .mail {
     font-family: 'Noah';
@@ -521,10 +524,21 @@ a:hover{
     height: 899px;
 }
 
-#zamdane-5 {
+/*#zamdane-5 {
     width: 1380px;
     height: 920px;
     margin-left: -80%;
+}*/
+/*#zamdane-5 {
+    width: 1380px;
+    margin-left: -91%;
+}*/
+
+.gallery-img-zamdane-5 {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    padding: 3%;
 }
 
 .img-title {

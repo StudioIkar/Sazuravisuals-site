@@ -163,7 +163,29 @@ $('document').ready(function(){
       $(this).find('.img-desc').fadeOut(100);
     });
 
+    $('.gallery-img-zamdane-5').hover(function() {
+      $(this).find('img').css('opacity', '0.5');
+      $(this).find('.img-title').fadeIn(300);
+      $(this).find('.img-desc').fadeIn(300);
+    }, function() {
+      $(this).find('img').css('opacity', '1');
+      $(this).find('.img-title').fadeOut(100);
+      $(this).find('.img-desc').fadeOut(100);
+    });
+
     //MODAL SUR LES IMG
+    $( ".gallery-img-zamdane-5" ).click(function() {
+      var src = $(this).attr("src");
+      
+      if($(this).attr('id')){
+        $('.modal-photo').css('width', '1380px');
+      }
+      
+      $(this).css('visibility', 'hidden');
+      $('.modal-img').attr('src',src);
+      $('.modal-photo').attr('src',src);
+      $('#imgModal').modal('show');
+    });
     $( ".gallery-img img" ).click(function() {
       var src = $(this).attr("src");
       
